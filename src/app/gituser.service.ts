@@ -18,4 +18,10 @@ export class GituserService {
     return this.userData.get<any>('https://api.github.com/users/'+ this.myUserName)
   }
 
+
+  getRepo(){
+    return this.userData.get<any>('https://api.github.com/users/'+ this.myUserName +'/repos')
+  }
+
 }
+

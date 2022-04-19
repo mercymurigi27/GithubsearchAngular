@@ -1,6 +1,22 @@
 input{
     height: 20px;
-    width: 70px;
+    width: 200px;
     background-color: bisque;
     display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 20pt;
+}
+button{
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20pt;
+}
+form{
+    border-style: solid;
+ 
 }
