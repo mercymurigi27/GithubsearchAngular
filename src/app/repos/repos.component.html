@@ -1,8 +1,12 @@
-<h2>Hello </h2>
+<h2 appFont>Repositories </h2>
 <div class="repo" *ngFor="let userRepoDetail of userRepoDetails">
-    <p appFont>{{userRepoDetail.name}}</p>
-    <p>{{userRepoDetail.description}}</p>
-    <p>{{userRepoDetail.created_at|date}}</p>
-    <p>{{userRepoDetail.created_at|dayCount}}</p>
+    <div class="name">
+        <p>User Name <br>{{userRepoDetail.name}}</p>
+        <p>Repository Description<br> {{userRepoDetail.description}}</p>
+   </div>
+    <div class="description">
+        <p> Date created: <br>{{userRepoDetail.created_at|date}}</p>
+        <p>Days passed since created:<br> {{userRepoDetail.created_at|dayCount}}</p>
+    </div>
 
 </div>
