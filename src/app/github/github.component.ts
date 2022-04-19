@@ -15,14 +15,13 @@ export class GithubComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.receiveUserData.getUserData().subscribe(function(data: any){
+    this.receiveUserData.getUserData().subscribe((data: any) =>{
       this.gitHubUser.userName= data.login
-      console.log(data.login)
-      console.log(data.avatar_url)
-      console.log(data.created_at)
-      console.log(data.id)
-      console.log(data.public_repos)
-
+      this.gitHubUser.userPic= data.avatar_url
+      this.gitHubUser.userId= data.id
+      this.gitHubUser.repoCount= data.public_repos
+      this.gitHubUser.dateJoined= data.created_at
+  
     })
   }
 

@@ -1,7 +1,11 @@
 <h2> Welcome to Github search app</h2>
 <div class="users">
     <div class="user">
-       <h2>display users</h2>
+       <p>{{ gitHubUser.userName}}</p><br>
+       <img src="{{gitHubUser.userPic}}" alt="image"><br>
+       <p>{{gitHubUser.userId}}</p><br>
+       <p>{{gitHubUser.repoCount}}</p><br>
+       <p>{{gitHubUser.dateJoined|date}}</p>
    </div>
    <div class="repo">
        <h2>display repos</h2>
