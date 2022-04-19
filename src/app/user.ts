@@ -1,6 +1,5 @@
 export class User {
-    constructor(public name:string, public profile:any){
-        this.name=name;
-        this.profile=profile;
+    constructor(public userName:string, public repoCount:number, public dateJoined:string){
+       
     };
 }
