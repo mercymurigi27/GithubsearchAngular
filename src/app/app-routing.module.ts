@@ -5,7 +5,7 @@ import { UserFormComponent } from './user-form/user-form.component';
 
 const routes: Routes = [
   { path:"", component:UserFormComponent},
-  { path:"github/;searchedName", component:GithubComponent}
+  { path:"github/:userName", component:GithubComponent}
 ];
 
 @NgModule({
