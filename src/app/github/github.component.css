@@ -1,4 +1,7 @@
 .users{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding: 20pt;
+    margin: 10pt;
+    background-image: linear-gradient(to right, rgba(245, 240, 237, 0.952),rgba(0,0,0,0.5));
 }
