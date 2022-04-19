@@ -1,7 +1,13 @@
 <app-navbar></app-navbar>
-
-<form action="">
-    <label for="userName">Search User by Name</label>
-    <input type="text" value="userName" class="form-control" name="userName" [(ngModel)]="userDetail.userName">
-    <button type="submit" (click)="goToUrl()">search</button>
-</form>
+<div class="div">
+    <div class="div1" appFont>
+      <h2> Welcome to Github Search App</h2>
+      <p>You can search any name you want and voila, you get results<br> within seconds try it yourself!!</p>
+   </div>
+   <div class="div2">
+  <form action="">
+      <label for="userName">Search User by Name</label>
+      <input type="text" value="userName" class="form-control" name="userName" [(ngModel)]="userDetail.userName">
+      <button type="submit" (click)="goToUrl()">search</button>
+  </form>
+</div>
