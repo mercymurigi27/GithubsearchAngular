@@ -34,3 +34,4 @@ Project meant to test our understanding of angular programming language and our 
 [Go Back to the top]()
 
 ## Live link
+https://mercymurigi27.github.io/GithubsearchAngular/
