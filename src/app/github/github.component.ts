@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GituserService } from '../gituser.service';
 import { User } from '../user';
 
 @Component({
@@ -7,11 +8,22 @@ import { User } from '../user';
   styleUrls: ['./github.component.css']
 })
 export class GithubComponent implements OnInit {
-  user: User[]=[];
+  gitHubUser:User= new User("","",0,0,"")
 
-  constructor() { }
+  constructor(private receiveUserData:GituserService) { 
+ 
+  }
 
   ngOnInit(): void {
+    this.receiveUserData.getUserData().subscribe(function(data: any){
+      this.gitHubUser.userName= data.login
+      console.log(data.login)
+      console.log(data.avatar_url)
+      console.log(data.created_at)
+      console.log(data.id)
+      console.log(data.public_repos)
+
+    })
   }
 
 }
